@@ -6,4 +6,8 @@ RSpec.describe FizzBuzz do
         expect(subject.check(1)).to eq 1
     end
 
+    it 'returns fizz if number is divisible by 3' do 
+        expect(subject.check(3)).to eq 'fizz'
+    end
+
 end
