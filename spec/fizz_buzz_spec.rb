@@ -2,6 +2,10 @@ require './lib/fizz_buzz'
 
 RSpec.describe FizzBuzz do 
 
+    it 'returns a rude message if negative number is passed in' do 
+        expect(subject.check(-3)).to eq "Are you for real? This is a negative number!"
+    end
+
     it 'returns a number if no game rules are met' do 
         expect(subject.check(1)).to eq 1
     end
