@@ -1,6 +1,8 @@
 class FizzBuzz
   def check(number)
-    if number % 15 == 0
+    if number.negative?
+        return "Are you for real? This is a negative number!"
+    elsif number % 15 == 0
         return 'fizzbuzz'
     elsif number % 3 == 0 
         return 'fizz'
